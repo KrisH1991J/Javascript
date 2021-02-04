@@ -1,1 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  background: rgba(0, 0, 255, 0.1);
+}
+img {
+  height: 450px;
+  width: 100%;
+}

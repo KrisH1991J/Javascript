@@ -3,27 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Excuse Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
       crossorigin="anonymous"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand">Excuse Generator</a>
+        <form class="d-flex justify-content-around">
+          <button id="button" class="btn btn-outline-success" type="button">
+            Create New Excuse
+          </button>
+        </form>
+      </div>
+    </nav>
+    <div class="container" style="width: 800px; margin-top: 150px">
+      <div class="card text-center" style="margin-auto;">
+        <div class="card-header">
+          <h5 class="card-title">OMG! You will not believe me but...</h5>
+        </div>
+        <div
+          class="card-body"
+          style="clear:both; margin:-20px;"
+          style="width: 100%"
+        >
+          <img
+            id="img"
+            src="https://images2.minutemediacdn.com/image/upload/c_fill,g_auto,h_1248,w_2220/v1584388937/shape/mentalfloss/536413-gettyimages-1077470274.jpg?itok=NoDcW5uz"
+            class="mw-100"
+          />
+        </div>
+        <div class="card-footer">
+          <h5 id="excuse" class="card-title">My dog ate my homework</h5>
+        </div>
       </div>
     </div>
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+      <div class="container text-center" style="width: 300px;">
+        <a class="navbar-brand">Made with ❤️ by Kristoffer Herman</a>
+      </div>
+    </nav>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
